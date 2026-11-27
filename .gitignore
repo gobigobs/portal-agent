@@ -1,0 +1,8 @@
+# Demo outputs are committed as the verified sample run, so they are
+# intentionally NOT ignored. Only local runtime artefacts are ignored.
+.venv/
+__pycache__/
+*.pyc
+.portal.pid
+
+portal.log

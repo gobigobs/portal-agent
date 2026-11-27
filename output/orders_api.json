@@ -1,0 +1,80 @@
+{
+  "source": "api",
+  "total_orders": 12,
+  "returned": 8,
+  "note": "API returns the 8 most recent orders only. Full list is on the /orders page.",
+  "orders": [
+    {
+      "order_id": "ORD-1012",
+      "date": "2026-11-25",
+      "customer": "Demo Arjun",
+      "channel": "Swiggy",
+      "items": "Crispy Chicken Strips 4pcs + Coke",
+      "amount_inr": 449,
+      "status": "Delivered"
+    },
+    {
+      "order_id": "ORD-1011",
+      "date": "2026-11-25",
+      "customer": "Demo Meera",
+      "channel": "Zomato",
+      "items": "Atti Popcorn Combo",
+      "amount_inr": 640,
+      "status": "Delivered"
+    },
+    {
+      "order_id": "ORD-1010",
+      "date": "2026-11-24",
+      "customer": "Demo Karthik",
+      "channel": "Direct",
+      "items": "Ultimate Chicken Feast Bucket",
+      "amount_inr": 999,
+      "status": "Delivered"
+    },
+    {
+      "order_id": "ORD-1009",
+      "date": "2026-11-24",
+      "customer": "Demo Divya",
+      "channel": "Zomato",
+      "items": "Tandoori Paneer Tikka Delight Pizza",
+      "amount_inr": 399,
+      "status": "Preparing"
+    },
+    {
+      "order_id": "ORD-1008",
+      "date": "2026-11-23",
+      "customer": "Demo Rohit",
+      "channel": "Swiggy",
+      "items": "Fried Chicken 1pc + Fries",
+      "amount_inr": 219,
+      "status": "Delivered"
+    },
+    {
+      "order_id": "ORD-1007",
+      "date": "2026-11-23",
+      "customer": "Demo Anitha",
+      "channel": "Zomato",
+      "items": "High Protein Chicken Salad",
+      "amount_inr": 259,
+      "status": "Delivered"
+    },
+    {
+      "order_id": "ORD-1006",
+      "date": "2026-11-22",
+      "customer": "Demo Vikram",
+      "channel": "Swiggy",
+      "items": "Crispy Chicken Wings 6 Pcs",
+      "amount_inr": 459,
+      "status": "Delivered"
+    },
+    {
+      "order_id": "ORD-1005",
+      "date": "2026-11-22",
+      "customer": "Demo Priya",
+      "channel": "Direct",
+      "items": "Super 10 Combo",
+      "amount_inr": 859,
+      "status": "Cancelled"
+    }
+  ]
+}

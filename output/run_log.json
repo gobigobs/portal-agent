@@ -1,0 +1,77 @@
+{
+  "generated_at_ist": "2026-11-25T06:27:19+05:30",
+  "steps": [
+    {
+      "step": 1,
+      "time_ist": "2026-11-25T06:27:07+05:30",
+      "action": "browser_launch",
+      "detail": "Headless Chromium via playwright bundled chromium",
+      "status": "ok",
+      "screenshot": null
+    },
+    {
+      "step": 2,
+      "time_ist": "2026-11-25T06:27:10+05:30",
+      "action": "open_login_page",
+      "detail": "GET http://127.0.0.1:8765/login",
+      "status": "ok",
+      "screenshot": "screenshots/01_login_page.png"
+    },
+    {
+      "step": 3,
+      "time_ist": "2026-11-25T06:27:12+05:30",
+      "action": "login",
+      "detail": "Logged in as demo user 'demo' (demo-only credentials); dashboard loaded",
+      "status": "ok",
+      "screenshot": "screenshots/02_dashboard.png"
+    },
+    {
+      "step": 4,
+      "time_ist": "2026-11-25T06:27:12+05:30",
+      "action": "api_orders",
+      "detail": "API path OK: GET /api/orders -> HTTP 200, 8 of 12 orders returned (API cap: recent 8 only). Saved orders_api.json.",
+      "status": "ok",
+      "screenshot": "screenshots/03_api_orders_ok.png"
+    },
+    {
+      "step": 5,
+      "time_ist": "2026-11-25T06:27:13+05:30",
+      "action": "api_payouts_failed",
+      "detail": "API path FAILED: GET /api/payouts -> HTTP 500 (legacy_payout_service_unavailable).",
+      "status": "failed",
+      "screenshot": "screenshots/04_api_payouts_failed.png"
+    },
+    {
+      "step": 6,
+      "time_ist": "2026-11-25T06:27:13+05:30",
+      "action": "FALLBACK_DECISION",
+      "detail": "API payouts unavailable (legacy_payout_service_unavailable: Payout service timed out after 30s. Use the /payouts page in the browser instead.). Decision: switch to browser navigation \u2014 extract payouts from the /payouts HTML table instead. Extraction continues; no records lost.",
+      "status": "fallback",
+      "screenshot": null
+    },
+    {
+      "step": 7,
+      "time_ist": "2026-11-25T06:27:14+05:30",
+      "action": "browser_payouts",
+      "detail": "Browser fallback OK: /payouts table extracted, 6 payouts (net total \u20b95,182). Saved payouts_browser.json.",
+      "status": "ok",
+      "screenshot": "screenshots/05_payouts_page.png"
+    },
+    {
+      "step": 8,
+      "time_ist": "2026-11-25T06:27:17+05:30",
+      "action": "browser_orders",
+      "detail": "Browser extraction OK: /orders table extracted, 12 orders (value \u20b95,559). Saved orders_browser.json.",
+      "status": "ok",
+      "screenshot": "screenshots/06_orders_page.png"
+    },
+    {
+      "step": 9,
+      "time_ist": "2026-11-25T06:27:18+05:30",
+      "action": "verify_and_save",
+      "detail": "Cross-check passed: all 8 API orders found in the 12-row browser list. Wrote records.json, orders.csv, payouts.csv. Totals: 12 orders (\u20b95,559), 6 payouts (net \u20b95,182).",
+      "status": "ok",
+      "screenshot": "screenshots/07_done_dashboard.png"
+    }
+  ]
+}

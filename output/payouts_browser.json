@@ -1,0 +1,62 @@
+[
+  {
+    "payout_id": "PAY-9006",
+    "settlement_date": "2026-11-25",
+    "orders_included": 2,
+    "gross_inr": 1089,
+    "fee_inr": 109,
+    "net_inr": 980,
+    "status": "Pending",
+    "utr": "DEMO-UTR-9006"
+  },
+  {
+    "payout_id": "PAY-9005",
+    "settlement_date": "2026-11-24",
+    "orders_included": 2,
+    "gross_inr": 1398,
+    "fee_inr": 140,
+    "net_inr": 1258,
+    "status": "Processing",
+    "utr": "DEMO-UTR-9005"
+  },
+  {
+    "payout_id": "PAY-9004",
+    "settlement_date": "2026-11-23",
+    "orders_included": 2,
+    "gross_inr": 678,
+    "fee_inr": 68,
+    "net_inr": 610,
+    "status": "Settled",
+    "utr": "DEMO-UTR-9004"
+  },
+  {
+    "payout_id": "PAY-9003",
+    "settlement_date": "2026-11-22",
+    "orders_included": 2,
+    "gross_inr": 1318,
+    "fee_inr": 132,
+    "net_inr": 1186,
+    "status": "Settled",
+    "utr": "DEMO-UTR-9003"
+  },
+  {
+    "payout_id": "PAY-9002",
+    "settlement_date": "2026-11-21",
+    "orders_included": 2,
+    "gross_inr": 718,
+    "fee_inr": 72,
+    "net_inr": 646,
+    "status": "Settled",
+    "utr": "DEMO-UTR-9002"
+  },
+  {
+    "payout_id": "PAY-9001",
+    "settlement_date": "2026-11-20",
+    "orders_included": 2,
+    "gross_inr": 558,
+    "fee_inr": 56,
+    "net_inr": 502,
+    "status": "Settled",
+    "utr": "DEMO-UTR-9001"
+  }
+]
